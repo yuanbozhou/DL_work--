@@ -12,14 +12,10 @@
 #include <vector>
 #include<iostream>
 using namespace std;
-class Solution {
-public:
     bool findNumberIn2DArray(vector<vector<int> >& matrix, int target){
          bool temp=false;//默认没有找到
          int rows=matrix.size();
-         
-         
-         
+                
         if(rows==0)
          {
              return false;
@@ -60,4 +56,6 @@ public:
          return temp;
 
     }
-};
+int main(){
+    //测试文件
+}
