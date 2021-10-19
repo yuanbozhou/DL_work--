@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>let</title>
+</head>
+<body>
+    <script>
+        //声明变量的格式
+        let a;
+        let b,c,d;
+        let e=100;
+        let f=521,g='iloveyou',h=[];
+        //let声明变量的特性:
+        //1.变量不能重复声明,在网页console控制台可以查看会报错：不能重复声明。而使用var是可以的。
+        let star='罗志祥';
+        //let star='小猪';  //'star' has already been declared
+        //2.块儿级作用域     全局，函数，eval作用域
+        {
+            let girl='周扬青';
+            console.log(girl);
+        }
+        //console.log(girl); //报错，girl没有定义
+        //3.不存在变量提升
+        //console.log(song);
+       // var song='恋爱达人';  //变量未定义
+       //let song='恋爱达人'; //不允许在没声明之前使用
+       //4.不影响作用域链
+       {
+           let school='尚硅谷';
+           function fn(){
+               console.log(school);
+           }
+           fn();
+       }
+
+
+    </script>
+</body>
+</html>
